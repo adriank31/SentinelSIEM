@@ -1,0 +1,12 @@
+<group name="windows,sysmon,powershell,">
+  <rule id="100001" level="8">
+    <if_group>sysmon_event1|windows-powershell</if_group>
+    <field name="win.eventdata.Image">.*powershell\.exe</field>
+    <match>Invoke-WebRequest|DownloadString|IEX\(New-Object Net\.WebClient\)</match>
+    <description>Suspicious PowerShell download cradle detected</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+    <options>no_full_log</options>
+  </rule>
+</group>

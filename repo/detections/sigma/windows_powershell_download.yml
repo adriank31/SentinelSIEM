@@ -1,0 +1,23 @@
+title: Suspicious PowerShell Download Cradle
+id: 7a2a9c2e-0b52-4a8a-b0b7-ps-download
+status: experimental
+description: Detects PowerShell web download cradles
+author: SentinelSIEM
+logsource:
+  product: windows
+  service: powershell
+detection:
+  selection:
+    Message|contains:
+      - "Invoke-WebRequest"
+      - "DownloadString"
+      - "IEX(New-Object Net.WebClient)"
+  condition: selection
+fields:
+  - Computer
+  - User
+  - Message
+level: medium
+tags:
+  - attack.execution
+  - attack.t1059.001

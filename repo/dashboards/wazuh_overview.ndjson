@@ -1,0 +1,16 @@
+[
+  {
+    "attributes": {
+      "title": "SentinelSIEM Overview",
+      "hits": 0,
+      "description": "Basic dashboard placeholder. Build charts in Kibana/Wazuh and export over this file.",
+      "panelsJSON": "[]",
+      "optionsJSON": "{\"useMargins\":true,\"hidePanelTitles\":false}",
+      "version": 1
+    },
+    "id": "sentinelsiem-overview",
+    "migrationVersion": {},
+    "references": [],
+    "type": "dashboard"
+  }
+]
