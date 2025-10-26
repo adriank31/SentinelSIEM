@@ -6,7 +6,7 @@ Reproducible, security-first SOC lab using **Wazuh (Manager + Indexer + Dashboar
 
 ---
 
-## ✨ What you’ll build
+## What you’ll build
 
 - **Wazuh all-in-one** on Ubuntu 22.04 (Manager + Indexer + Dashboard).
 - **Windows 10** workstation with **Sysmon** (rich endpoint telemetry) + **Wazuh Agent**.
@@ -16,7 +16,7 @@ Reproducible, security-first SOC lab using **Wazuh (Manager + Indexer + Dashboar
 
 ---
 
-## 🧭 Table of Contents
+## Table of Contents
 
 1. [Architecture](#architecture)  
 2. [Requirements](#requirements)  
